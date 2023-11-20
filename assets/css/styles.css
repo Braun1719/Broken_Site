@@ -1,0 +1,415 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+*,
+*,:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    width: 100% ;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/test.jpg") center no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro__title {
+    color:#fff;
+font-size: 70px;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 1;
+}
+.intro__title:after {
+    content: "";
+    display: block;
+    width: block;
+    height: 5px;
+    background-color: #fff;
+    margin: 60px auto;
+}
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-top: 10px;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+.nav{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    position: relative;
+}
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.nav__link:hover {
+color: #fce38a;
+}
+.nav__link:hover:after {
+    display: block;
+    
+}
+
+.header__ineer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    
+    
+}
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    padding: 8px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .1s linear;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+/* Section */
+.section {
+    display: flex;
+    justify-content: left;
+    line-height: normal;
+}
+.section__header {
+    color: #333;
+    text-align: center;
+}
+/* Местоположение */
+.head{
+font-size: 20px;
+color: #000000;
+text-align: justify;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container__head{
+    border: 8px double rgb(6, 6, 6);
+    padding: 0px 10px;
+    background: #ffffff;
+    width: 100% ;
+    max-width: 700px;
+    margin-top: 150px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+.container__foto {
+    position: absolute;
+    right: 300px;
+    margin-top: 200px;
+    background-color: #ffffff;
+    /* задаём рамку и внутренние отступы для контента */
+    border: 4px solid #494b4d;
+    padding: 10px;
+    /* минимальная ширина блока, после которой не происходит масштабирование */
+    min-width: 450px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    
+    
+}
+.my-header {
+    background-color: #181a1c;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-top: 3px solid rgb(47, 47, 47);
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  }
+.fon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    background: url("../images/test.jpg") center;
+-webkit-background-size: cover;
+background-size: cover;
+}
+.container__inner_transposition {
+    width: 100% ;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header__ineer__transposition{
+    display: flex;
+    padding: 10px auto 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.figcaption {
+    /* тэг идет первым в блоке - подпись будет сверху */
+    /* выравнивание по центру, и изменим фон */
+    background-color: #d5dee6;
+    display: flex;
+    padding-left: 30px;
+  }
+.img {
+    /* картинка займет всю доступную ширину блока figure*/
+    width: 100%;
+  }
+  /* История бункера сталина */
+  .container__head__history{
+    border: 8px double rgb(68, 68, 68);
+    padding: 0px 5px;
+    background: #ffffff;
+    width: 100% ;
+    max-width: 1000px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    margin-left: 110px;
+}
+.nesolestag-enadenud {
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 30px;
+    
+  }
+  
+  .kesednsoled:after,
+  .kesednsoled:before {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+  .ico-wrap {
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    margin: 30px 18px 5px 5px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid #ffffff;
+    float: left;
+    border-radius: 30px;
+  }
+  .ico-contact {
+    line-height: 1.9 !important;
+  }
+  .meanous-andscoev {
+    float: left;
+    margin-bottom: 20px;
+  }
+  .aio-icon-title {
+    font-size: 20px;
+    color: #f8f8f8;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  .container__contacts {
+    width: 100% ;
+    max-width: 1400px;
+    margin-top: 130px;
+    margin-bottom: 300px;
+    margin-left: 230px;
+    font-size: large;
+}
+/* Легенды */
+.container__legends {
+    width: 100% ;
+    max-width: 1100px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    padding: 2px 1px;
+    border: 8px double rgb(68, 68, 68);
+    background: #ffffff;
+}
+.container__fonts__legends {
+    width: 100% ;
+    padding: auto;
+    max-width: 1100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    border: 2px solid rgb(113, 113, 113);
+}
+.container__map{
+    position: absolute;
+    right: 80px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    /* задаём рамку и внутренние отступы для контента */
+    padding: 8px;
+    /* минимальная ширина блока, после которой не происходит масштабирование */
+    min-width: 450px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(59, 59, 59);
+} 
+.container__orange__legends {
+    position: absolute;
+    margin-top: -180px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    color: #141414;
+    right: 80px;
+    width: 100% ;
+    padding: auto;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: #d9c373;
+} 
+.container__gallery__foto__left {
+    position: absolute;
+    right: 630px;
+    margin-top: 150px;
+    background-color: #ffffff;
+    /* задаём рамку и внутренние отступы для контента */
+    padding: 8px;
+    /* минимальная ширина блока, после которой не происходит масштабирование */
+    max-width: 550px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(59, 59, 59);
+}
+.container__gallery__foto__left__down {
+    float: right;
+    margin-right: 630px ;
+    margin-top: 780px;
+    margin-bottom: 80px;
+    background-color: #ffffff;
+    /* задаём рамку и внутренние отступы для контента */
+    padding: 8px;
+    /* минимальная ширина блока, после которой не происходит масштабирование */
+    max-width: 550px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(59, 59, 59);
+    
+}
+.container__gallery__foto__right {
+    float: left;
+    margin-left: 150px;
+    margin-top: 150px;
+    background-color: #ffffff;
+    /* задаём рамку и внутренние отступы для контента */
+    padding: 8px;
+    /* минимальная ширина блока, после которой не происходит масштабирование */
+    max-width: 550px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(59, 59, 59);
+}
+.container__gallery__foto__right__down {
+    position: absolute;
+    float: left;
+    margin-left: 150px;
+    margin-top: 780px;
+    background-color: #ffffff;
+    /* задаём рамку и внутренние отступы для контента */
+    padding: 8px;
+    /* минимальная ширина блока, после которой не происходит масштабирование */
+    min-width: 450px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(59, 59, 59);
+}
+.container__tourism__foto {
+    position: absolute;
+    right: 230px;
+
+    background-color: #ffffff;
+    /* задаём рамку и внутренние отступы для контента */
+    padding: 8px;
+    /* минимальная ширина блока, после которой не происходит масштабирование */
+    max-width: max-content;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(59, 59, 59);
+}
+
+
+
